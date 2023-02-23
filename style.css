@@ -1,0 +1,512 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Gelasio:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+:root{
+    font-size: 10px;
+}
+body{
+    background-color: black;
+}
+.navbar{
+    /* position: absolute; */
+    top:0;
+    width:100vw;
+    height:10rem;
+    left:0;
+    position: fixed;
+    background-color: black;
+    padding: 2rem;
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hamburger-icon , .close-menu  {
+    display: none;
+    text-align: right;
+    color:white;
+    font-size: 4rem;
+
+}
+.hamburger-icon i,.close-menu i{
+    color: aliceblue;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap:10rem;
+}
+.navbar ul li{
+    font-size: 4rem;
+    list-style: none;
+    margin-bottom:5px;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: antiquewhite;
+
+}
+.navbar ul li a:hover{
+    color:rgba(254, 254, 1, 0.981);
+
+}
+.close-menu{
+    display: none;
+}
+
+
+.main-section{
+    background-image: url("img/back\ ground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 0rem;
+    background-attachment: fixed;
+    /* height: 100vh; */
+}
+.container-box{
+    width:50%;
+    min-width:10rem;
+    /* height:70rem; */
+    margin:15rem auto;
+    
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:5rem;
+    flex-wrap: wrap;
+    text-align: center;
+
+    
+
+
+}
+
+.greetings h4{
+    font-size: 3rem;
+    color: white;
+    font-family: 'Baloo 2', cursive;
+}
+
+.myname{
+    font-size: 5rem;
+    color:rgba(254, 254, 1, 0.981);
+    letter-spacing: .5rem;
+    font-family: 'Dancing Script', cursive;;
+    text-shadow: 10px 0px 10px rgb(208, 205, 205);
+}
+.introduction{
+    font-size: 2.5rem;
+    color:beige;
+    font-family: 'Dancing Script', cursive;;
+    text-align: justify;
+    padding: 1rem;
+    line-height: 5rem;
+    letter-spacing: 0.5rem;
+
+}
+.about-me-section{
+    border: 1px solid white;
+    background-image: url("img/Rojal\ in.jpg");
+    background-size: cover;
+    padding:10rem;
+    background-attachment: scroll;
+    
+
+}
+.aboutme-box{
+    width:100%;
+    margin:1px auto;
+    min-width: 300px;
+    padding:5rem;
+    /* min-width: 700px; */
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    }
+.myphoto{
+    width:100%;
+   }
+.img-box{
+    /* border: 1px solid yellow; */
+    width:40%;
+    box-shadow: 0px 0px 4px 7px gray;
+}
+.description h2 {
+    margin-bottom: 5rem;
+    font-size: 5rem;
+    color:bisque;
+    border-bottom: 3px solid yellow;
+    padding: 1rem;
+    width:25rem;
+    text-align: center;
+}
+.description{
+    padding: 2rem;
+    width:40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    gap:3rem
+    
+}
+.about-me-text{
+    padding:1rem;
+    font-family: 'Dancing Script', cursive;
+    font-size:200%;
+    font-weight:100;
+    letter-spacing: .1rem;
+    text-indent: 5rem;
+    text-align: justify;
+    color:beige;
+    
+    
+
+
+}
+.description .btn ,.view-more-btn{
+    margin:1rem 0rem;
+    background-color:yellow;
+    padding: 1rem;
+    box-shadow: 0px 0px 30px 1px yellow;
+    border: 1px solid transparent;
+    border-radius:10px;
+}
+.description .btn a,.view-more-btn a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: rgb(45, 41, 37);
+}
+
+
+/* --------projects section--------- */
+.my-projects-section h1,.social-media h3{
+    color:bisque;
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 5rem;
+}
+.my-projects-section{
+    /* width:160rem; */
+    padding-left:5rem;
+    padding-right: 5rem;
+    padding-bottom: 10rem;
+    /* border:1px solid blue */
+    margin:1px auto;
+    /* border: 1px solid blue; */
+    text-align: center;
+
+
+}
+.projects-div{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    margin:0px auto;
+    /* border:1px solid red; */
+    padding:2rem;
+    gap:5rem;
+    flex-wrap: wrap;
+
+}
+.projects{
+    width:50rem;
+    /* max-width: 90rem; */
+    /* border:2px solid yellow; */
+    height:35rem;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: rgba(16, 131, 231, 0.133);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 5px white;
+    
+}
+.project-desc{
+    color:whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    width:40%;
+    padding: 2rem;
+    transform: translateY(10rem);
+    text-align: center;
+
+}
+.projects:hover .project-desc{
+    transform:translateY(-10rem);
+    z-index: 20;
+    transition: 2s;
+}
+.project-img:hover{
+    opacity: 0.4;
+}
+.projects a{
+    width:90rem;
+}
+
+.project-img{
+    width:100%;
+    /* margin:1px auto; */
+    height:100%;
+}
+.view-more-btn {
+    box-shadow: none;
+}
+.contact-us-section{
+    padding:5rem;
+    background-image: linear-gradient(70deg,rgb(13, 12, 12));
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.social-media{
+    width:65rem;
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    /* background-color: white; */
+    gap:3rem;
+    padding: 5rem;
+}
+.social-media h3{
+    border-bottom: 4px solid white;
+}
+.social-media p {
+    font-size: 3rem;
+    color:bisque;
+
+}
+.icon-box{
+    width:20rem;
+    /* border: 4px solid red; */
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+ .bi-envelope{
+  color:red;
+}
+.bi-telephone{
+ color:green;
+}
+.bi-github{
+ color:white;
+}
+.bi-linkedin{
+    color:blue
+}
+.bi-instagram{
+    color:plum;
+}
+
+i{
+    font-size: 3rem;
+    margin-right: 3rem;
+    /* color:red; */
+}
+
+
+.form-container-box{
+    /* margin:0px auto; */
+    /* border:1px solid #d2D248; */
+    
+    width:60rem;
+    min-width:5rem;
+    padding: 5rem;
+    background-color:rgba(128, 128, 128, 0.255);
+    backdrop-filter: blur(50px);
+    border-radius: 2rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3rem;
+    margin-top:3rem 4rem;
+}
+input,textarea{
+    width: 100%;
+    padding: 0 .5rem;
+    text-align: center;
+    outline: none;
+    border-radius: 1rem;
+    /* border: 1px solid hotpink; */
+    font-size: 1.5rem;
+    box-shadow: 0px 0px 20px gray;
+    resize: none;
+
+    
+}
+input{
+    height: 5rem;
+}
+input:focus{
+    border: 3px solid bisque;
+}
+[type="submit"]{
+    width:50%;
+    background-color:yellow;
+    border:1px solid transparent;
+}
+/* ----------------responsive section------------------ */
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)// */
+@media (max-width: 576px) { 
+    .hamburger-icon{
+        display: block;
+        text-align: right;
+        position: fixed;
+        right:0;
+        top:0;
+    }
+    .close-menu{
+        text-align: right;
+        position: fixed;
+        right:0;
+        top:0;
+    }
+    .navbar ul{
+        /* display: none; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(10, 10, 10, 0.478);
+        gap:1rem;
+        /* margin-top:15rem; */
+        transform: translateX(500px);
+        width: 100%;
+    }
+    
+    .myname{
+        font-size: 2rem;
+    }
+    .introduction p{
+        font-size: 1.5rem;
+    }
+    .introduction {
+        line-height:normal;
+        letter-spacing: 0;
+        font-size: 3rem;
+    }
+    .greetings h4{
+        font-size: 1.5rem;
+    }
+    .container-box{
+        gap:2rem;
+        margin-bottom: 0;
+        margin-top: 2rem;
+    }
+    .navbar{
+        padding: 1rem;
+         height: 0; 
+        padding-top: 7rem;
+        justify-content: flex-end;
+        /* margin-bottom: 5rem; */
+        /* overflow: hidden; */
+    }
+    .aboutme-box{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 300px;
+        padding: 1rem;
+        margin-top: 5rem;
+    }
+    .description{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .description h2 , .social-media h3 {
+        border-bottom: 4px solid white;
+          margin:1px auto;
+           width: auto;
+        border-bottom-width:1px;
+    }
+    .contact-us-section i , .contact-us-section p{
+        font-size: 2rem;
+    }
+    .social-media{
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    .input{
+        height: 3rem;
+    }
+ }
+ @media (max-width:1287px)  {
+    .about-me-text{
+        font-size: 1.5rem;
+    }
+    .description h2 {
+           font-size: 3.5rem;
+           margin-bottom: 2rem;
+ }
+ .about-me-section{
+    padding:2rem;
+ }
+ .container-box{
+    width:80%;
+ }
+ .main-section{
+    padding-bottom: 0rem;
+ }
+ .navbar ul li{
+    font-size: 3rem;
+ }
+ .description .btn a{
+  font-size: 1.5rem;
+ }
+}
+@media (max-width:1053px)  {
+    .description h2{
+        width:18rem;
+    }
+    .social-media h3 {
+        border-bottom: 2px solid white;
+        margin-bottom: 0rem;
+        font-size: 4rem;
+    }
+    .social-media p{
+        font-size: 2rem;
+    }
+    .input{
+        height:3rem
+    }
+}
+
+
+/* // Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... } */
